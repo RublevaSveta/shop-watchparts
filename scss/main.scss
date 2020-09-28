@@ -1,0 +1,1185 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "index.scss";
+@import "shop.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  font-size: 15px;
+  position: relative;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fancybox-slide--html {
+  padding: 0!important;
+}
+
+.green {
+  color: $green;
+}
+
+.btn-chat, .btn-search {
+  position: fixed;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.btn-chat {
+  right: 40px;
+  bottom: 40px;
+}
+
+.btn-search {
+  right: 40px;
+  bottom: 120px;
+}
+
+.wrapper {
+  @include wrapper;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.header__center {
+  @include flex-space-between;
+}
+.header {
+  background-color: $black;
+  position: relative;
+  .header__nav {
+      display: flex;
+    li {
+      padding-right: 20px;
+      display: inline;
+
+      @include media(1024px) {
+        margin: 15px 30px;
+      }
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+
+    @include media(1024px) {
+     flex-direction: column;
+      background: url(../img/Bg_Home_Black_01.jpg)no-repeat;
+      background-size: cover;
+      margin-left: -30px;
+      margin-right: -30px;
+      height: 380px;
+      padding-top: 80px;
+    }
+  }
+}
+
+.menu-close {
+
+  @include media(1024px) {
+    background: url("../img/icon_cross_white.png") no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+}
+
+.mob-menu {
+
+
+  @include media(1024px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: $black;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    transition: left .5s;
+  }
+}
+
+.menu__wrapper {
+  @include media(1024px) {
+    padding: 30px;
+  }
+
+}
+
+.flex-logo {
+
+  display: none;
+  @include media(1024px) {
+    display: flex;
+    align-items: flex-start;
+    color: $white;
+    font-size: 30px;
+    text-transform: uppercase;
+
+    img {
+      width: 30px;
+      margin-right: 20px;
+    }
+  }
+
+
+}
+
+.logo__sbtitle {
+  color: #8a8a8a;
+  font-size: 13px;
+  width: 200px;
+  margin: 10px 0;
+}
+
+
+.header__nav_index {
+  text-transform: uppercase;
+}
+
+.header__icons {
+  justify-content: flex-end;
+
+  img {
+    width: 28px;
+    cursor: pointer;
+  }
+}
+
+.header__logo {
+  background: url(../img/icon_brand_logo_gray_small@2x.png);
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.slider__button {
+  @include buttons;
+}
+
+.header__cart-value {
+  color: #179200;
+  padding: 0 10px;
+}
+
+.slider__button_green {
+  background-color: $green;
+}
+
+.slider__button_black {
+  background-color: $black;
+}
+
+.footer {
+  background-color: $black;
+  color: $white;
+
+  a {
+    color: $white;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.footer__wrapper {
+
+  @include wrapper;
+  padding: 80px 215px 60px 215px;
+
+  @include media(1366px) {
+    padding: 80px 60px 60px 60px;
+  }
+
+  @include media(812px) {
+    padding: 73px 30px 30px 30px;
+  }
+
+}
+
+.footer__content {
+  @include flex-space-between;
+  align-items: flex-start;
+
+  @include media(1365px) {
+    flex-direction: column;
+  }
+}
+
+.footer__logo {
+  position: relative;
+
+  &:before {
+    content: "";
+    background: url(../img/icon_brand_logo_gray_small@2x.png) no-repeat;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-size: cover;
+    height: 28px;
+    width: 28px;
+  }
+}
+.footer__arrow {
+
+  &:before {
+    display: block;
+    content: "";
+    background: url(../img/Icon_Arrow_Forward_Green@2x.png) no-repeat;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-size: cover;
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.footer__block {
+  position: relative;
+
+}
+
+.footer__nav {
+
+}
+
+.footer__nav li {
+  margin: 10px 0;
+  @include media(414px) {
+    width: 6px 0;
+  }
+}
+
+.footer__nav li a{
+  color: $white;
+}
+
+.footer__nav-block{
+ width: 550px;
+
+  @include media(1365px) {
+    width: 100%;
+  }
+}
+
+.footer__info {
+  width: 660px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media(1500px) {
+    height: 311px;
+    margin-left: 20px;
+  }
+
+  @include media(1365px) {
+    height: auto;
+    margin-left: 0;
+    margin-top: 60px;
+    width: 100%;
+  }
+
+}
+
+.footer__nav-block-wr {
+  @include flex-space-between;
+  align-items: flex-start;
+  @include media(812px) {
+    flex-wrap: wrap;
+  }
+}
+
+.footer__info-text {
+  display: flex;
+
+  @include media(414px) {
+   flex-direction: column;
+  }
+}
+
+.footer__info-text {
+
+  img {
+    width: 28px;
+    margin-bottom: 15px;
+  }
+
+  >div{
+    &:last-child {
+      margin-left: 15px;
+      @include media(414px) {
+        margin-left: 0;
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+.footer__icons {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-size: cover!important;
+  margin-right: 15px;
+  margin-top: 10px;
+
+  @include media(414px) {
+    width: 33px;
+    height: 33px;
+    margin-right: 22px;
+  }
+
+}
+
+.footer_inst {
+  background: url('../img/Icon_Insta@2x.png') no-repeat;
+
+  &:hover {
+    background: url('../img/Icon_Insta_Green@2x.png') no-repeat;
+  }
+}
+
+.footer_facebook {
+  background: url('../img/Icon_FB@2x.png') no-repeat;
+
+  &:hover {
+    background: url('../img/Icon_FB_Green@2x.png') no-repeat;
+  }
+}
+
+.footer_twitter {
+  background: url('../img/Icon_Twittwer@2x.png') no-repeat;
+
+  &:hover {
+    background: url('../img/Icon_Twittwer_Green@2x.png') no-repeat;
+  }
+}
+
+.footer__tel {
+  display: inline-block;
+  margin-top: 15px;
+
+  @include media(414px) {
+    margin-top: 6px;
+  }
+}
+
+.footer__copyright {
+  margin-top: 35px;
+  color: $grey-text;
+
+  @include media(414px) {
+    display: none;
+  }
+}
+
+.footer__copyright_414 {
+  display: none;
+
+  @include media(414px) {
+    display: block;
+  }
+}
+
+.footer__desc {
+  color: #B2B2B2;
+  margin-top: 30px;
+}
+
+.wrapper-content {
+  @include wrapper-content;
+  @include media(1024px) {
+    padding: 60px;
+  }
+  @include media(812px) {
+    padding: 60px 30px;
+  }
+}
+
+.tabcontent {
+  display: none;
+}
+
+.footer__soc-networks {
+  @include media(414px) {
+    margin-top: 50px;
+  }
+}
+
+.contact__p {
+  margin-top: 45px;
+  @include media(812px) {
+    margin-top: 0;
+  }
+}
+
+.table {
+  width: 100%;
+  border: 1px solid $grey-text;
+
+  tr {
+    border-bottom: 1px solid $grey-text;
+
+    &:last-child {
+
+      td {
+        padding-bottom: 47px;
+      }
+    }
+
+    &:first-child {
+
+      td {
+        padding-top: 47px;
+      }
+    }
+
+    td {
+      padding: 10px 15px;
+    }
+  }
+  .table__bold {
+    font-weight: 600;
+  }
+}
+
+.pagination {
+  @include flex;
+  align-items: center;
+
+  .pagination__arrow {
+    background: url('../img/icon_arrow_forward@2x.png') no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+  }
+  .left {
+    transform: rotate(-180deg);
+  }
+  .right {
+    margin: 0 30px 0 40px;
+  }
+  .pagination__numbers {
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: $green;
+    }
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  .active {
+    color: $green;
+  }
+}
+
+.btn-black {
+  @include buttons;
+  display: inline-block;
+  margin-top: 26px;
+  background-color: $black;
+}
+
+.btn-green {
+  display: inline;
+  @include buttons;
+  color: $green;
+  border: 2px solid $green;
+}
+
+.banner {
+  background: url(../img/bg-faq.jpg) no-repeat;
+  background-size: cover!important;
+  width: 100%;
+  height: 235px;
+
+  @include media(1024px) {
+    height: 314px;
+    position: relative;
+    top: 59px;
+  }
+}
+
+.main{
+  @include flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
+  @include media(1024px) {
+   flex-direction: column;
+  }
+}
+
+.aside {
+  width: 344px;
+
+  @include media(1024px) {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+}
+
+.main__content {
+  width: 60%;
+
+  @include media(1024px) {
+    width: 100%;
+  }
+
+  @include media(414px) {
+    margin-top: 30px;
+  }
+}
+
+.header__nav_index {
+  font-family: DINPro-Medium;
+}
+
+strong {
+  font-weight: 600;
+  font-family: DINPro-Bold;
+}
+
+.main__p {
+  margin: 25px 0;
+  line-height: 18px;
+}
+
+.main__header {
+  @include header;
+  font-family: DINPro-Medium;
+}
+
+.main__subtitle {
+  @include  subtitle;
+  display: inline-block;
+  font-size: 13px;
+  font-family: DINPro-Medium;
+}
+
+.bold {
+  font-weight: 600;
+  font-family: DINPro-Bold;
+}
+
+.list-disc li{
+  list-style-type: disc;
+  margin: 3px 0;
+}
+
+.main__block-text {
+  margin: 65px 0;
+}
+
+.main__nav-arrow {
+  width: 28px;
+  transform: rotate(-180deg);
+  margin-right: 30px;
+  margin-left: -64px;
+
+  @include media(1024px) {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: none;
+  }
+}
+
+.aside__nav {
+  color: $black;
+
+  @include media(1024px) {
+    position: relative;
+  }
+}
+
+.brends {
+  .brends__img {
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include media(812px) {
+      width: 60%;
+      position: static;
+    }
+    img {
+      width: 100%;
+    }
+
+  }
+
+  .brends__all-brends {
+    text-transform: uppercase;
+    font-family: DINPro-Medium;
+
+    @include media(812px) {
+        margin: 15px 0;
+    }
+    @include media(414px) {
+      margin: 0;
+    }
+  }
+
+  .brends__name-brend {
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 25px;
+    font-family: DINPro-Medium;
+  }
+
+  .brends__header {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 30px 0;
+    font-weight: 600;
+    font-family: DINPro-Medium;
+  }
+
+  .brends__img {
+    margin: 30px 0;
+    position: relative;
+
+    @include media(1024px) {
+      position: static;
+    }
+
+  }
+
+  .brends__p {
+    margin: 20px 0;
+    line-height: 22px;
+  }
+}
+
+.banner_bergeon {
+  background: url(../img/brends.png) no-repeat;
+}
+
+.text-grey {
+  color: $dark-grey;
+}
+
+.text__warning {
+  color: $text-warning;
+  font-style: italic;
+}
+
+.owl-dots {
+  display: none!important;
+}
+
+.owl-nav {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 38%;
+  color: wheat;
+  font-size: 60px;
+
+  @include media(1024px) {
+    display: block;
+    width: 100%;
+    left: 0;
+  }
+
+
+}
+
+.goods__content:hover .owl-nav{
+  display: block!important;
+}
+
+.news-index:hover .owl-nav{
+  display: block!important;
+}
+
+.owl-prev, .owl-next  {
+  width: 35px;
+  height: 35px;
+  background-size: cover!important;
+  span {
+    display: none;
+  }
+}
+
+.owl-prev {
+  background: url(../img/Icon_Slider_Arrow_back@2x.png) no-repeat!important;
+  background-size: cover!important;
+  left: 38%;
+
+  @include media(1024px) {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.owl-next {
+  background: url(../img/Icon_Slider_Arrow_Forward@2x.png) no-repeat!important;
+  background-size: cover!important;
+  margin-left: 343px!important;
+
+  @include media(1024px) {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.contact-banner {
+  background: url(../img/Bg_Home_Black_02.jpg)no-repeat;
+  background-size: cover!important;
+}
+
+.contact {
+
+  .contact__block {
+    line-height: 18px;
+    margin: 15px 0;
+    p {
+      a {
+        color: inherit;
+      }
+    }
+  }
+  iframe {
+    @include media(414px) {
+      width: 414px;
+      margin-left: -30px;
+      margin-right: -30px;
+    }
+    @include media(413px) {
+      width: 100%;
+      margin-left: 0;
+    }
+    @include media(375px) {
+      width: 375px;
+      margin-left: -30px;
+    }
+    @include media(374px) {
+      width: 100%;
+      margin-left: 0;
+    }
+    @include media(360px) {
+      width: 360px!important;
+      margin-left: -30px;
+      margin-right: -30px;
+    }
+    @include media(373px) {
+      width: 100%;
+      margin-left: -30px;
+    }
+    @include media(320px) {
+      width: 320px;
+    }
+  }
+}
+
+.support__flex {
+  @include flex-space-between;
+  align-items: flex-start;
+
+  @include media(812px) {
+    flex-direction: column;
+  }
+
+  input:focus, textarea:focus {
+    border: 2px solid $text-warning;
+  }
+  padding-bottom: 30px;
+}
+
+.sale__content {
+  @include flex-space-between;
+  align-items: flex-start;
+
+  @include media(1000px) {
+    flex-direction: column;
+  }
+}
+
+.header__burger {
+  background: url(../img/Icon_Burger.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  display: none;
+  margin-right: 15px;
+  cursor: pointer;
+
+  @include media(1024px) {
+    display: block;
+  }
+
+}
+
+.sale__casio {
+  background: url('../img/tissot-prc-200-chronograph-silver-dial-men_s-watch-t0554171603700_1.jpg')no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1200px;
+
+  @include media(1600px) {
+    height: 600px;
+  }
+
+  @include media(1000px) {
+    height: 300px;
+    background-position: center;
+  }
+
+  @include media(414px) {
+    height: 150px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.sale__small-item, .sale__item-big, .sale__item {
+  position: relative;
+}
+
+.sale__item-big {
+  width: 60%;
+
+  @include media(1000px) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.sale__item-small {
+  position: relative;
+  width: 40%;
+
+  @include media(1000px) {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.sale__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 344px;
+  height: 286px;
+  overflow: auto;
+  background: rgba(1, 0, 1, 0.6);
+  padding: 15px;
+  color: $white;
+
+  @include media(1600px) {
+    width: 100%;
+    height: 100%!important;
+    box-sizing: border-box;
+  }
+
+  @include media(1000px) {
+    display: inline-block;
+    position: static;
+  }
+}
+
+.sale__arrow {
+  width: 35px!important;
+  margin-bottom: 30px;
+
+  @include media(1000px) {
+    margin-bottom: 0;
+  }
+}
+
+.sale__arrow, .sale__header, .sale__brend, .sale__subtitle, .sale__desc {
+
+  @include media(1000px) {
+    margin: 10px 20px;
+  }
+}
+
+.sale__item-small .sale__info{
+  width: 344px;
+  height: 342px;
+
+  @include media(1600px) {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.sale__header, .sale__brend, .sale__subtitle  {
+  text-transform: uppercase;
+}
+
+.sale__header {
+  font-size: 50px;
+  line-height: 35px;
+  font-weight: 600;
+  font-family: DINPro-Medium;
+
+  @include media(1024px) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+.sale__brend {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+
+  @include media(1024px) {
+    font-size: 16px;
+  }
+}
+
+.sale__subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: DINPro-Medium;
+
+  @include media(1000px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.sale__desc {
+  margin-top: 20px;
+  line-height: 18px;
+}
+
+.sale__vestibulum {
+  position: relative;
+  background: url('../img/tissot-prc-200-chronograph-silver-dial-men_s-watch-t0554171603700_1.jpg')no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+
+  @include media(1600px) {
+    height: 300px;
+  }
+
+  @include media(1000px) {
+    width: 100%;
+  }
+}
+
+.sale__tissot {
+  background: url('../img/0290310448_1024x1024@2x.jpg')no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+
+  @include media(1600px) {
+    height: 300px;
+  }
+}
+
+.sale__small-item {
+  width: 40%;
+  img {
+    width: 100%;
+  }
+}
+
+.sale__item {
+  width: 50%;
+
+  @include media(1000px) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.table {
+  .green-text {
+    margin-right: 6px;
+  }
+}
+
+.green-text {
+  color: $green;
+}
+
+.pink-text {
+  color: $text-warning;
+}
+
+.wrapper-table {
+  @include media(500px) {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+.sale__info_big {
+  width: 344px;
+  height: 286px!important;
+
+  @include media(812px) {
+    width: 100%;
+
+  }
+}
+
+.header__cart {
+  display: inline-block;
+}
+
+.cart__btn-close {
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.cart {
+  display: none;
+  position: absolute;
+  right: -380px;
+  top: 0;
+  background-color: $white;
+  width: 300px;
+  height: 100vh;
+  padding: 40px;
+  z-index: 50;
+  line-height: 23px;
+  transition: right .5s;
+
+  .btn-green {
+    display: block;
+    color: $white;
+    background-color: $green;
+    padding: 12px 18px;
+    margin: 35px 0;
+  }
+  ul {
+
+    li {
+      margin: 25px 0;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+  @include media(414px) {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.cart__number {
+  margin: 0  6px;
+  font-weight: 600;
+}
+
+.cart__total {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+
+  &:after {
+    content: 'РУБ';
+    margin-left: 6px;
+    font-weight: normal;
+  }
+}
+.header__tel {
+  display: none;
+  color: $white;
+  padding-left: 30px;
+  padding-top: 10px;
+  @include media(1024px) {
+    display: block;
+  }
+}
+
+#modal {
+  display: none;
+  width: 400px;
+  .modal__wrapper {
+    padding: 30px;
+
+    .modal__header {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .modal__content {
+      margin: 20px 0;
+      line-height: 20px;
+      font-size: 16px
+    }
+    .btn-green {
+      margin: 20px 0!important;
+    }
+
+    .btn-green, .btn-black  {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 15px 50px;
+      box-sizing: border-box;
+    }
+  }
+  @include media(812px) {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@font-face {
+  font-family: DINPro-Medium;
+  src: url(../fonts/DINPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: DINPro-Bold;
+  src: url(../fonts/DINPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: DINPro-Light;
+  src: url(../fonts/DINPro-Light.ttf);
+}
+
+
+

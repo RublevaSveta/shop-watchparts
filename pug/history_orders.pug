@@ -1,0 +1,80 @@
+extends main
+block variables
+    - var pageTitle = 'Личный кабинет';
+
+block content
+
+    .lk
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .lk__header.lk__header_none  WATCHPARTS /
+                    .lk__header.lk__header_none ЛИЧНЫЙ КАБИНЕТ
+                    .lk__menu-block
+                        .lk__menu
+                            span.lk__indicator.lk__plus
+                            span Личный кабинет
+                        nav.lk__nav
+                            li
+                                a(href="fast_delivery.html") Быстрая справка
+                            li
+                                a(href="history_orders.html") История платежей
+                            li
+                                a(href="status.html") Статус заказа
+                            li
+                                a.active(href="history_orders.html") История заказов
+                            li
+                                a(href="order.html") Корзина
+                                span.lk__cart 21
+                            li
+                                a(href="payments.html") Платежные средства
+                            li
+                                a(href="favorites.html") Любимые товары
+                            li
+                                a(href="profile.html") Профиль покупателя
+                            li.lk__exite Выйти
+
+                .lk__main
+                    .lk__name-user MAX GUELMANN
+                    .lk__header ИСТОРИЯ ПЛАТЕЖЕЙ
+                    .lk__last-payment
+                        div ПОСЛЕДНИЙ ПЛАТЕЖ
+                        div VISA ****3959,
+                            span.lk__paument-data 22.10.2019
+                        .lk__last-price 30500.00
+                    .table__wrapper
+                        table.table
+                            tbody
+                                tr.table__bold
+                                    td Платеж
+                                    td Дата
+                                    td Сумма (РУБ)
+                                tr.table__bold
+                                    td VISA ****3959
+                                    td 22.10.2019
+                                    td 30500.00
+                                tr
+                                    td VISA ****3959
+                                    td 22.10.2019
+                                    td 30500.00
+                                tr
+                                    td VISA ****3959
+                                    td 22.10.2019
+                                    td 30500.00
+                                tr
+                                    td VISA ****3959
+                                    td 22.10.2019
+                                    td 30500.00
+
+                    .pagination
+                        .pagination__arrow.left
+                        .pagination__arrow.right
+                        .pagination__numbers.active 1
+                        .pagination__numbers 2
+                        .pagination__numbers 3
+                        .pagination__numbers 4
+                        .pagination__numbers 5
+
+
+
+    include footer

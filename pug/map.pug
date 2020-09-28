@@ -1,0 +1,42 @@
+extends main
+block variables
+    - var pageTitle = 'Новости';
+
+block content
+    .banner.contact-banner
+    .wrapper-content
+        .main
+            aside.aside
+                a(href='index.html').aside__nav
+                    img(src='../img/icon_arrow_forward@2x.png' alt='').main__nav-arrow
+                .main__subtitle  WATCHPARTS /
+                .main__header Контакты
+                .lk__menu-block
+                    .lk__menu
+                        span.lk__indicator.lk__plus
+                        span Контакты
+                    nav.lk__nav
+                        li
+                            a(href="contact.html") Адрес
+                        li
+                            a.active(href="map.html") Проезд
+                        li
+                            a(href="requisites.html") Реквизиты
+                        li
+                            a(href="support.html") Поддержка
+                        li.lk__exite Выйти
+            .main__content.contact
+                .main__subtitle  Контакты
+                .main__header Проезд
+                .contact__block
+                    .contact__block
+                        p График работы: будние дни с 10:00 до 18:00, суббота и воскресенье — выходные дни.
+                    .contact__block
+                        p Вход с дальнего торца здания (если вы идете от станции метро "Савеловская", от ТЦ "Савеловский" или от железной дороги). Вход с ближнего торца здания (если вы идете от стоянки магазина «Metro»). Вход с крыльцом, дверь с надписью "Руспарт", сразу по лестнице на второй этаж. Ориентир при движении со стороны автостоянки — красная горящая вывеска «Столовая «Станция Савеловская»».
+                .contact__block
+                    iframe(src='https://yandex.ru/map-widget/v1/-/CGs~YD-Z', width='100%', height='400', frameborder='1', allowfullscreen='true')
+
+
+
+
+    include footer

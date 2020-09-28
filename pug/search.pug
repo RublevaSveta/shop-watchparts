@@ -1,0 +1,208 @@
+extends main
+block variables
+    - var pageTitle = 'Поиск';
+
+block content
+    .search-block
+        .search-block__wrapper
+            .search-block__input-relative
+                input(type="text" name="").search-block__search-input
+                img(src="../img/Icon_Search_Green_Big.png" alt="").search-block__icon-search
+            .search-block__filtr
+                .search-block__btn-filtr.active.tablinks(onclick="tabs(event, 'filtr')") Фильтр
+                .search-block__btn-sort.tablinks(onclick="tabs(event, 'sort')") Сортировка
+
+            #filtr.tabcontent(style="display:block;")
+
+                .search-block__choose
+                    form(action="")
+                        .search__dropdown
+                            .search-block__header Раздел
+                            .search-block__input-relative.search-block__choose-input
+                                span Все
+                                img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                .search-block__input-dropdown
+                                    ul
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+
+                        .search__dropdown
+                            .search-block__header Группа
+                            .search-block__input-relative.search-block__choose-input
+                                span Все
+                                img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                .search-block__input-dropdown
+                                    ul
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+
+
+                            //select(name="").search-block__choose-input
+                            //    option Ремешки
+                            //    option Стенды и коробки
+                            //    option Элементы питания
+                            //    option распродажа
+                    .search-block__header Бренд
+                    .search-block__choose-brend
+                        .search-block__item Все
+                        .search-block__item.active Apella
+                        .search-block__item  Apella
+                        .search-block__item  Gandino
+                        .search-block__item.active Casio
+                        .search-block__item Eberhard
+                        .search-block__item.active Horotec
+                        .search-block__item ETA
+                        .search-block__item Frederique Constant
+                        .search-block__item  Alpha
+                        .search-block__item  Frederique Constant
+                        .search-block__item.active Casio
+                        .search-block__item Apella
+                        .search-block__item Casio
+                        .search-block__item  Gandino
+                        .search-block__item.active Casio
+                        .search-block__item Eberhard
+                        .search-block__item.active Horotec
+                        .search-block__item ETA
+                        .search-block__item Frederique Constant
+                        .search-block__item  Alpha
+                        .search-block__item  Frederique Constant
+                        .search-block__item.active Casio
+                        .search-block__item Apella
+                        .search-block__item Casio
+                .search-block__btn.search-block__btn_clear Очистить
+                .search-block__btn.search-block__btn_search Найти
+
+            #sort.tabcontent(style="display:none;")
+
+                .search-block__choose
+                    .search-block__header Сортировать по
+                    form(action="")
+                        .search__dropdown
+                            .search-block__input-relative.search-block__choose-input
+                                span Цена
+                                img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                .search-block__input-dropdown
+                                    ul
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+                                        li.search-block__input-btn Элементы питания
+
+                        .search__dropdown
+                            .search-block__input-relative.search-block__choose-input
+                                span Название
+                                img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                .search-block__input-dropdown
+                                    ul
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                    .search-block__header(style='margin-top: 20px') Наличие
+                    .search__dropdown
+                        .search-block__input-relative.search-block__choose-input
+                            span Все
+                            img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                            .search-block__input-dropdown
+                                ul
+                                    li.search-block__input-btn Стенды и коробки
+                                    li.search-block__input-btn Стенды и коробки
+                                    li.search-block__input-btn Стенды и коробки
+
+                    //.search-block__input-relative
+                        img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                        select(name="").search-block__sort-input
+                            option Цена
+
+                    //.search-block__input-relative.search-block__input-relative_second
+                        img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                        select(name="").search-block__sort-input
+                            option Название
+                //.search-block__header Наличие
+                //form.search-block__sort(action="")
+                    .search-block__input-relative
+                        img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                        select(name="").search-block__sort-all
+                            option Все
+                .search-block__btn.search-block__btn_clear Очистить
+                .search-block__btn.search-block__btn_search Найти
+    .goods
+        .goods__wrapper
+            .wrapper-content
+                .goods__content()
+                    .goods__content(style='flex-wrap: wrap;')
+                        mixin goods__item-mixin()
+                            .goods__item
+                                div
+                                    img(src="../img/30082.jpg" alt="").goods__img
+                                div
+                                    div.goods__brend miota
+                                    div.goods__name МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                                    div.goods__price-block
+                                        span.goods__price 18600
+                                        span.goods__rub руб
+                                    .btn__in-order В заказ
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+
+
+
+            button#loadMore.btn-black(style='margin: 0 auto;display: block; width: 250px;margin-top: 60px;') Загрузить еще
+
+    include footer

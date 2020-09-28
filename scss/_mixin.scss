@@ -1,0 +1,112 @@
+@mixin media ($_maxwidth) {
+  @media (max-width: $_maxwidth) {
+    @content;
+  }
+}
+
+@mixin wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: block;
+  padding: 24px 27px;
+}
+
+@mixin wrapper-content {
+  padding: 80px 215px;
+
+  @include media(1366px) {
+    padding: 80px;
+  }
+
+  @include media(1024px) {
+    padding: 30px;
+  }
+
+  @include media(812px) {
+    padding: 30px;
+  }
+}
+
+@mixin header {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+@mixin subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-col-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin buttons {
+  padding: 15px 50px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+
+  @include media(812px) {
+    padding: 15px 30px;
+  }
+  @include media(414px) {
+    padding: 10px 22px;
+  }
+}
+
+@mixin input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid $dark-grey;
+  cursor: pointer;
+}
+
+@mixin input-grey {
+  width: 320px;
+  height: 40px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #707070;
+  background-color: $white!important;
+}
+
+@mixin label {
+  display: block;
+  font-weight: 600;
+  margin: 15px;
+}
+
+
+

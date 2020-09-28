@@ -1,0 +1,73 @@
+mixin navLink(link, name, index)
+    li
+        if(index)
+            a(href=link).nav-Link.header__nav_index=name
+        else
+            a(href=link).nav-Link=name
+
+
+.btn-chat
+    img(src="../img/chat.png" alt="")
+a(data-fancybox data-src='#modal-search' href='javascript;').btn-search
+    img(src="../img/icon-search.png" alt="")
+header
+    .header
+        .wrapper
+            .header__center
+                .header__center.header__center_mob
+                    .header__burger
+                    a(href='index.html')
+                        .header__logo
+                    .mob-menu
+                        .menu__wrapper
+                            .menu-close
+                            .flex-logo
+                                a(href='index.html')
+                                    img(src='../img/icon_brand_logo_gray_small@2x.png', alt='')
+                                .logo watchparts
+                                    .logo__sbtitle Каталог запчастей для часового бизнеса
+
+                            nav.header__nav
+                                +navLink('index.html', 'watchparts', true)
+                                +navLink('catalog.html', 'Каталог')
+                                +navLink('sale.html', 'Акции')
+                                +navLink('faq.html', 'Оплата и доставка')
+                                +navLink('faq.html', 'FAQ')
+                                +navLink('support.html', 'Поддержка')
+                                +navLink('contact.html', 'Контакты')
+                                a(href='tel:+74955439239').header__tel
+                                    img(src='../img/Icon_Phone_green_Big.png', alt='')
+
+
+                .header__icons
+                    a(href="search.html")
+                        img(src="../img/icon_search_white-1@2x.png", alt="")
+                    span.header__cart-value
+                        | 15
+                    .header__cart
+                        img(src="../img/icon_shop_bag@2x.png", alt="")
+
+
+
+.cart
+    .cart__btn-close
+        img(src='../img/icon_cross_black.png' alt='')
+    strong В корзине:
+    span.cart__number 23
+    span товара
+    div ОБЩАЯ СУММА ЗАКАЗА
+    .cart__total 30500.00
+    .btn-green Оформить заказ
+    ul
+        li
+            a(href='order.html') Корзина
+        li
+            a(href='order.html') Личный кабинет
+        li
+            strong
+                a(href='') Выйти
+
+
+
+
+

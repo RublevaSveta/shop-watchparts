@@ -1,0 +1,178 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+.reg {
+
+  .main__wrapper {
+    margin-left: 30px;
+    margin-top: 100px;
+    width: 700px;
+
+    @include media(1024px) {
+      margin-left: 0;
+      margin-top: 30px;
+      width: 100%;
+    }
+  }
+
+  .main__nav-arrow {
+    width: 35px;
+    margin-right: 23px;
+  }
+
+  .main__header {
+    font-size: 40px;
+    line-height: 35px;
+
+    @include media(414px) {
+      font-size: 28px;
+    }
+  }
+  .main__subtitle {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    @include media(414px) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  .btn-green {
+    margin-left: 30px;
+  }
+
+  input {
+    width: 320px;
+    height: 40px;
+    background-color: #fff;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 2px solid $dark-grey;
+
+    @include media(414px) {
+      width: 100%;
+    }
+  }
+
+  .aside__nav {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .order__label {
+    margin: 15px 15px 15px 0 ;
+  }
+
+  label {
+    display: block;
+    font-weight: 600;
+    margin: 15px;
+  }
+
+}
+
+.reg__block {
+  @include flex-center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.reg__step-1  {
+  font-size: 40px;
+  margin: 0 15px 0 0;
+}
+
+.reg__p {
+  margin: 20px 0;
+
+  .active {
+    border: 2px solid $text-warning;
+  }
+}
+
+.reg__link {
+  color: green;
+}
+
+.reg__p_italic {
+  font-style: italic;
+}
+
+.reg__input-block {
+  @include flex;
+
+  @include media(812px) {
+    flex-direction: column;
+  }
+}
+
+.reg__input-item {
+
+  &:last-child {
+    margin-left: 30px;
+    @include media(812px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.reg__block-note {
+  width: 100%;
+  height: 126px;
+  overflow: auto;
+  padding: 15px;
+  border: 2px solid $dark-grey;
+  box-sizing: border-box;
+}
+
+.reg__authorization {
+  margin: 100px 0 0 250px;
+  width: 344px;
+
+  @include media(1024px) {
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  @include media(600px) {
+    width: 100%;
+  }
+
+  .btn-black {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+  }
+  input {
+    width: 100%;
+  }
+
+  .order__flex {
+    margin: 0;
+  }
+
+  .green {
+    margin-top: 20px;
+    a {
+      color: $green;
+      &:last-child {
+        margin-left: 6px;
+      }
+    }
+  }
+}
+
+.reg__text-label {
+
+  @include media(450px) {
+    width: 200px;
+  }
+
+}
+
+.reg__text-warm {
+  color: $text-warning;
+  font-style: italic;
+}

@@ -1,0 +1,102 @@
+extends main
+block variables
+    - var pageTitle = 'Личный кабинет';
+
+block content
+
+    .lk
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .lk__header.lk__header_none WATCHPARTS /
+                    .lk__header.lk__header_none личный кабинет
+                    .lk__menu-block
+                        .lk__menu
+                            span.lk__indicator.lk__plus
+                            span Личный кабинет
+                        nav.lk__nav
+                            li
+                                a(href="fast_delivery.html") Быстрая справка
+                            li
+                                a(href="history_orders.html") История платежей
+                            li
+                                a(href="status.html") Статус заказа
+                            li
+                                a(href="history_orders.html") История заказов
+                            li
+                                a(href="order.html") Корзина
+                                span.lk__cart 21
+                            li
+                                a(href="payments.html") Платежные средства
+                            li
+                                a(href="favorites.html") Любимые товары
+                            li
+                                a.active(href="profile.html") Профиль покупателя
+                            li.lk__exite Выйти
+                .lk__main
+                    .lk__name-user MAX GUELMANN
+                    .lk__header Профиль покупателя
+                    .lk__last-payment
+                        div
+                            strong Заходил в магазин
+                        div.lk__paument-data 22.10.2019
+                        .lk__header
+                            strong MAX GUELMANN
+                        .profile
+                            .profile__header
+                            form
+                                .reg__p
+                                    label(for='user-name-mail') Имя пользователя / Email
+                                    input(type='text', name='',  placeholder='@')#user-name-mail
+                                .reg__p
+                                    label(for='password') Пароль *
+                                    input(type='password', name='',  placeholder='@')#password
+                                .reg__p
+                                    label(for='password-repeate') Повторить пароль
+                                    input(type='password', name='',  placeholder='@')#password-repeate
+                            .btn-green Сохранить
+                            .profile__header Информация о компании
+                            .profile__flex
+                                .profile__item
+                                    form
+                                        .reg__p
+                                            label(for='company-name') Название компании *
+                                            input(type='text', name='',  placeholder='@')#company-name
+                                        .reg__p
+                                            label(for='favorite-goods') Интересующие товары *
+                                            input(type='text', name='',  placeholder='@')#favorite-goods
+                                        .reg__p
+                                            label(for='inn') ИНН *
+                                            input(type='number', name='',  placeholder='@')#inn
+                                .profile__item
+                                    form
+                                        .reg__p
+                                            label(for='activity-company') Вид деятельности *
+                                            input(type='text', name='',  placeholder='@')#activity-company
+                                        .reg__p
+                                            label(for='legal-name') Юридическое название *
+                                            input(type='text', name='',  placeholder='@')#legal-name
+                                        .reg__p
+                                            label(for='requisites') Реквизиты *
+                                            input(type='text', name='',  placeholder='@')#requisites
+                            .btn-green Сохранить
+                            .profile__header Контактное лицо
+                            .profile__flex
+                                .profile__item
+                                    form
+                                        .reg__p
+                                            label(for='user-name') Ф.И.О. *
+                                            input(type='text', name='',  placeholder='@')#user-name
+                                        .reg__p
+                                            label(for='tel') Телефон *
+                                            input(type='tel', name='',  placeholder='@')#tel
+                                .profile__item
+                                    .reg__p
+                                        form
+                                            .reg__p
+                                                label(for='post') Должность *
+                                                input(type='text', name='',  placeholder='@')#post
+                            .btn-green Сохранить
+
+
+    include footer

@@ -1,0 +1,60 @@
+extends main
+block variables
+    - var pageTitle = 'Новости';
+
+block content
+
+    .wrapper-content
+        .main
+            aside.aside
+                a(href='index.html').aside__nav
+                    img(src='../img/icon_arrow_forward@2x.png' alt='').main__nav-arrow
+                .main__subtitle.lk__header_none  WATCHPARTS / Все бренды
+                .main__header.lk__header_none Все бренды
+                .lk__menu-block
+                    .lk__menu
+                        span.lk__indicator.lk__plus
+                        span Все бренды
+                    nav.lk__nav
+                        li
+                            a(href="bergeon.html") Bergeon
+                        li
+                            a(href="") Apella
+                        li
+                            a(href="") Apella
+
+            .main__content
+                .news
+                    .news__img
+                        img(src='../img/news.png' alt='')
+                    .news__content
+                        .news__info
+                            .news__data 01.02.2020
+                            .news__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                        .news__text Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus. Ut vel mauris porttitor, ultricies magna sit amet, egestas odio.
+                .news
+                    .news__img
+                        img(src='../img/news.png' alt='')
+                    .news__content
+                        .news__info
+                            .news__data 01.02.2020
+                            .news__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                        .news__text Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus. Ut vel mauris porttitor, ultricies magna sit amet, egestas odio.
+                .news
+                    .news__img
+                        img(src='../img/news.png' alt='')
+                    .news__content
+                        .news__info
+                            .news__data 01.02.2020
+                            .news__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                        .news__text Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus. Ut vel mauris porttitor, ultricies magna sit amet, egestas odio.
+
+                .news__arows
+                    a(href='')
+                        img(src='../img/icon_arrow_forward@2x.png' alt='')
+                    a(href='')
+                        img(src='../img/icon_arrow_forward@2x.png' alt='')
+
+
+
+    include footer

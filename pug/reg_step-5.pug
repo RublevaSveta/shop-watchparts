@@ -1,0 +1,26 @@
+extends main
+block variables
+    - var pageTitle = 'Регистрация';
+
+block content
+
+    .lk.reg
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg__block
+                            .reg__step-1 5
+                            div Спасибо!
+                        div Ваша заявка принята. Мы свяжемся с вами в самое ближайшее время.
+                        a(href='index.html', style='width: 100px').btn-black ОК
+
+    include footer

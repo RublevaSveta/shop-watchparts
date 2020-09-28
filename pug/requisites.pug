@@ -1,0 +1,37 @@
+extends main
+block variables
+    - var pageTitle = 'Новости';
+
+block content
+    .banner.contact-banner
+    .wrapper-content
+        .main
+            aside.aside
+                a(href='index.html').aside__nav
+                    img(src='../img/icon_arrow_forward@2x.png' alt='').main__nav-arrow
+                .main__subtitle  WATCHPARTS /
+                .main__header Контакты
+                .lk__menu-block
+                    .lk__menu
+                        span.lk__indicator.lk__plus
+                        span Контакты
+                    nav.lk__nav
+                        li
+                            a(href="contact.html") Адрес
+                        li
+                            a(href="map.html") Проезд
+                        li
+                            a.active(href="requisites.html") Реквизиты
+                        li
+                            a(href="support.html") Поддержка
+                        li.lk__exite Выйти
+            .main__content.contact
+                .main__subtitle  Контакты
+                .main__header Реквизиты
+                .contact__block
+                    p ООО «РУСПАРТ»:
+                    p ИНН/КПП: 7707565569/770701001
+                    p ОГРН: 105774886064
+
+
+    include footer

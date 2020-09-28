@@ -1,0 +1,87 @@
+extends main
+block variables
+    - var pageTitle = 'Механизм в сборе ETA 980.1632';
+
+block content
+
+    .lk
+        .lk__wrapper
+            .lk__content
+                aside.aside
+                    a(href='catalog.html').aside__nav
+                        img(src='../img/icon_arrow_forward@2x.png' alt='').main__nav-arrow
+                    .main__subtitle.lk__header_none WATCHPARTS /
+                    .main__header.lk__header_none Каталог
+                    .lk__menu-block
+                        .lk__menu
+                            a(href='index.html')
+                                img(src='../img/Icon_Arrow_Back_Green@2x.png', alt='', style='width: 28px;')
+                .good
+                    .good__wrapper
+                        .good__img
+                            .slider-for
+                                img(src='../img/30082.jpg' alt='')
+                                img(src='../img/30082.jpg' alt='')
+                                img(src='../img/30082.jpg' alt='')
+                                img(src='../img/30082.jpg' alt='')
+                            .slider-nav
+                                img(src='../img/30082.jpg' alt='')
+                                img(src='../img/30082.jpg' alt='')
+                                img(src='../img/30082.jpg' alt='')
+                                img(src='../img/30082.jpg' alt='')
+                        .good__content
+                            .good__brend-name Casio
+                            .good__name Механизм в сборе ETA 980.1632
+                            .good__price 4900
+                            .good__brend Casio
+                            .good__desc-block
+                                .good__btn
+                                    .good__desc-btn.active.tablinks(onclick="tabs(event, 'filtr')") Описание
+                                    .good__desc-comment.tablinks(onclick="tabs(event, 'sort')") Комментарии
+                                #filtr.tabcontent(style="display:block;")
+                                    .good__desc
+                                        ul
+                                            li Наличие:
+                                                span.good__presence Да (7)
+                                            li Доставка:
+                                                span.good__delivery По всей России Курьер, самовывоз, почта
+                                            li Код:
+                                                span.good__code-order 980.163
+                                            li Подходит к моделям:
+                                                    span.good__fit 980.153
+                                            li Минимальный заказ:
+                                                span.good__min-order 1 шт.
+                                        ul
+                                            li 5 1/2 x 6 3/4
+                                            li h: 2,20
+                                            li d: 13,00 x 15,15
+                                            li SR516SW 2 hands
+
+                                    .good__icons
+                                        .good__btn-order В заказ
+                                        div
+                                            .good__favorites
+                                            .good__share
+                                #sort.tabcontent.tabcontent_sort
+                                    .comments
+                                     div Комментарии
+
+    append scripts
+        script.
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });
+    include footer
+

@@ -1,0 +1,46 @@
+extends main
+block variables
+    - var pageTitle = 'Регистрация';
+
+block content
+
+    .lk.reg
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg__block
+                            .reg__step-1 3
+                            div Контактное лицо
+                        .reg__input-block
+                            form.reg__input-item
+                                .reg__p
+                                    label(for='user-name') Ф.И.О. *
+                                    input(type='text', name='',  placeholder='@')#user-name
+                                .reg__p
+                                    label(for='email') Email *
+                                    input(type='e-mail', name='',  placeholder='@')#email
+                                .reg__p
+                                    label(for='phone') Телефон *
+                                    input(type='phone', name='',  placeholder='@')#phone
+
+                            .reg__input-item
+                                .reg__p
+                                    label(for='post') Должность *
+                                    input(type='text', name='',  placeholder='@')#post
+                                .reg__p
+                                    label(for='password') Пароль *
+                                    input(type='password', name='',  placeholder='@')#password
+
+                        a(href='').btn-black Отмена
+                        a(href='reg_step-4.html').btn-green Далее
+
+    include footer

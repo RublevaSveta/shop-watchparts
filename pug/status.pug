@@ -1,0 +1,84 @@
+extends main
+block variables
+    - var pageTitle = 'Личный кабинет';
+
+block content
+
+    .lk
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .lk__header.lk__header_none WATCHPARTS /
+                    .lk__header.lk__header_none ЛИЧНЫЙ КАБИНЕТ
+                    .lk__menu-block
+                        .lk__menu
+                            span.lk__indicator.lk__plus
+                            span Личный кабинет
+                        nav.lk__nav
+                            li
+                                a(href="fast_delivery.html") Быстрая справка
+                            li
+                                a(href="history_orders.html") История платежей
+                            li
+                                a.active(href="status.html") Статус заказа
+                            li
+                                a(href="history_orders.html") История заказов
+                            li
+                                a(href="order.html") Корзина
+                                span.lk__cart 21
+                            li
+                                a(href="payments.html") Платежные средства
+                            li
+                                a(href="favorites.html") Любимые товары
+                            li
+                                a(href="profile.html") Профиль покупателя
+                            li.lk__exite Выйти
+
+                .lk__main
+                    .lk__name-user MAX GUELMANN
+                    .lk__header Статус заказа
+                    .lk__last-payment
+                        div
+                            strong ЗАКАЗ №
+                                span#id-order 3040066
+                        .data-order 22.10.2020
+                        .lk__header
+                            strong Отправлен
+
+                    .table__wrapper
+                        table.table
+                            tbody
+                                tr.table__bold
+                                    td Заказ №
+                                    td Дата оформления
+                                    td Статус
+                                    td дата
+                                tr.table__bold
+                                    td 3040066
+                                    td 22.10.2019
+                                    td Отправлен
+                                    td 22.10.2019
+                                tr
+                                    td 3040066
+                                    td 22.10.2019
+                                    td Доставлен
+                                    td 22.10.2019
+                                tr
+                                    td 3040066
+                                    td 22.10.2019
+                                    td Получен
+                                    td 22.10.2019
+
+
+                    .pagination
+                        .pagination__arrow.left
+                        .pagination__arrow.right
+                        .pagination__numbers.active 1
+                        .pagination__numbers 2
+                        .pagination__numbers 3
+                        .pagination__numbers 4
+                        .pagination__numbers 5
+
+
+
+    include footer

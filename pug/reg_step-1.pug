@@ -1,0 +1,30 @@
+extends main
+block variables
+    - var pageTitle = 'Регистрация';
+
+block content
+
+    .lk.reg#reg-1(style='display: none;')
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg
+                            .reg__block
+                                .reg__step-1 1
+                                div Условия работы
+                            .reg__p Зарегистрируйтесь, чтобы: Ознакомиться с ценами и наличием Делать и сохранять заказы онлайн Оперативно узнавать о новых поступлениях и новостях Получить доступ к подробной технической информации о ремонте часов.
+                            .reg__p.reg__p_italic Мы работаем только с ИП и юридическими лицами — продаем товар только оптом и только для дальнейшего коммерческого использования. Все анкеты проверяются администратором, который в случае необходимости перезванивает по указанному вами телефону.
+                                span.reg__link Подробнее
+                            a(href='').btn-black Отмена
+                            a(href='reg_step-2.html').btn-green Далее
+
+    include footer

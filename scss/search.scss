@@ -1,0 +1,264 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+.search-block {
+
+  .active {
+    background-color: #2B2B2B;
+    color: $white;
+  }
+}
+
+.search-block__wrapper {
+  @include wrapper-content;
+  position: relative;
+
+  @include media(812px) {
+    padding: 30px ;
+  }
+}
+
+.fancybox-slide {
+  .search-block__wrapper {
+    @include media(812px) {
+      padding: 30px 0 0 0;
+    }
+  }
+}
+
+.search-block__search-input {
+  border: 2px solid $green;
+  padding: 25px;
+  width: 100%;
+  height: 92px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 26px;
+
+  @include media(812px) {
+    height: 65px;
+    padding: 15px;
+  }
+  @include media(414px) {
+    height: 50px;
+    padding: 15px;
+  }
+}
+
+.search-block__input-relative {
+  position: relative;
+}
+
+.search-block__input-relative_second {
+  margin-left: 44px;
+}
+
+.search-block__icon-search {
+  position: absolute;
+  background-color: $white;
+  top: 19px;
+  right: 23px;
+  width: 57px;
+  @include media(812px) {
+    top: 11px;
+    right: 14px;
+    width: 44px;
+  }
+  @include media(812px) {
+    width: 29px;
+  }
+}
+
+.search-block__icon {
+  position: absolute;
+  background-color: $white;
+  top: 3px;
+  right: 7px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.search-block__filtr {
+  @include flex;
+  margin: 30px 0;
+}
+
+.search-block__btn-filtr, .search-block__btn-sort {
+  border: 2px solid $black;
+  width: 50%;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search-block__header  {
+  margin: 10px 0 10px 15px;
+  font-weight: 600;
+}
+
+.search-block__choose {
+  width: 59%;
+
+  @include media(1024px) {
+    width: 100%;
+  }
+
+  form {
+    @include flex-space-between;
+    align-items: flex-start;
+
+    @include media(812px) {
+      flex-direction: column;
+    }
+
+    .search__dropdown {
+      width: 46%;
+
+      @include media(812px) {
+        width: 100%;
+        &:last-child {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+  @include media(812px) {
+    width: 100%;
+  }
+
+}
+
+.search-block__choose-input {
+  @include input;
+  width: 100%;
+  box-sizing: border-box;
+  height: 47px;
+
+
+}
+
+.search-block {
+
+  &__input-dropdown {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: -1px;
+    width: 100%;
+    background: white;
+    max-height: 250px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px; }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#a8a8a8), to(#a8a8a8));
+      background-image: linear-gradient(to top, #a8a8a8, #a8a8a8);
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 5px; }
+  }
+
+  &__input-btn{
+    padding: 10px 12px;
+
+    transition: all 200ms ease-out;
+
+    &:active,
+    &:hover{
+      background-color: $grey-text;
+    }
+  }
+}
+
+.search-block__choose-brend {
+  @include flex;
+  flex-wrap: wrap;
+}
+
+.search-block__item {
+  @include buttons;
+  border: 1px solid $btn-grey;
+  color: $black;
+  margin: 4px 6px;
+  padding: 8px 17px;
+
+  @include media(414px) {
+    padding: 8px 20px;
+  }
+}
+
+.search-block__btn {
+  display: inline-block;
+  @include buttons;
+  color: $dark-grey;
+  border: 2px solid $dark-grey;
+  margin: 30px 0 0 0;
+}
+
+.search-block__btn_clear {
+  @include media(375px) {
+   padding: 12px 20px;
+  }
+}
+
+.search-block__btn_search {
+  color: $green;
+  border: 2px solid $green;
+  padding: 12px 150px;
+  margin-left: 30px;
+
+  @include media(1024px) {
+    padding: 12px 80px;
+  }
+
+  @include media(500px) {
+    padding: 12px 60px;
+    margin-left: 15px;
+  }
+  @include media(375px) {
+    margin-left: 2px;
+    padding: 12px 36px;
+  }
+}
+
+.tabcontent_sort {
+
+
+  @include media(1024px) {
+    width: 100%;
+  }
+}
+
+.search-block__sort {
+  @include flex-space-between;
+
+  div {
+    width: 100%;
+
+  }
+
+}
+
+.search-block__sort-input {
+  @include input;
+}
+
+.search-block__sort-all {
+  @include input;
+}
+
+
+.search-block__input-dropdown {
+  z-index: 2;
+  ul {
+    z-index: 10;
+   width: 100%;
+  }
+}

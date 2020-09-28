@@ -1,0 +1,51 @@
+extends main
+block variables
+    - var pageTitle = 'Регистрация';
+
+block content
+
+    .lk.reg
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg__block
+                            .reg__step-1 2
+                            div Информация о компании
+                        .reg__text-warm Эти поля обязательны для заполнения
+                        .reg__input-block
+                            .reg__input-item
+                                .reg__p
+                                    label(for='company-name') Название компании *
+                                    input(type='text', name='',  placeholder='@')#company-name.active
+                                .reg__p
+                                    label(for='favorites-goods') Интересующие товары *
+                                    input(type='text', name='',  placeholder='@')#favorites-goods
+                                .reg__p
+                                    label(for='inn') ИНН *
+                                    input(type='text', name='',  placeholder='@')#inn
+
+                            .reg__input-item
+                                .reg__p
+                                    label(for='work') Вид деятельности *
+                                    input(type='text', name='',  placeholder='@')#work
+                                .reg__p
+                                    label(for='legal-name') Юридическое название *
+                                    input(type='text', name='',  placeholder='@')#legal-name
+                                .reg__p
+                                    label(for='requisites') Реквизиты *
+                                    input(type='text', name='',  placeholder='@')#requisites
+
+
+                        a(href='').btn-black Отмена
+                        a(href='reg_step-3.html').btn-green Далее
+
+    include footer

@@ -1,0 +1,245 @@
+extends main
+block variables
+    - var pageTitle = ' Главная';
+
+block content
+
+    .slider__wrapper
+
+        #slider2
+            .slider__wrapper
+                .slider.slider_sale
+                    .slider__content.sale-block
+                        .slider__header-block
+                            img(src="../img/Icon_Brand_logo_black_Big@2x.png" alt="").slider__icon
+                            div
+                                p.slider__text
+                                    strong СПЕЦПРЕДЛОЖЕНИЕ
+                                h1.slider__header BERGEON
+                                p.slider__subtitle 4503 005 VISSIN LIQUID FOR REMOVING BROKEN WATCH SCREWS
+                                    br
+                                    strong 18600.00 Р
+
+
+            .slider__wrapper
+                .slider.slider_sale
+                    .slider__content.sale-block
+                        .slider__header-block
+                            img(src="../img/Icon_Brand_logo_black_Big@2x.png" alt="").slider__icon
+                            div
+                                p.slider__text СПЕЦПРЕДЛОЖЕНИЕ
+                                h1.slider__header BERGEON
+                                p.slider__subtitle 4503 005 VISSIN LIQUID FOR REMOVING BROKEN WATCH SCREWS
+                                    br
+                                    strong 18 600 Р
+
+    .info-block
+        .info__block__items
+            .info__block__item
+                div
+                    img(src="../img/Icon_Arrow_Forward_Green@2x.png" alt="")
+                    .info-block__text
+                        | поиск по каталогу
+                input(type="text" name="" value="").info-block__input
+                .info-block__search-icon-block
+                    img(src="../img/Icon_Search_Green_Big.png" alt="").info-block__search-icon
+            .info__block__item
+                div
+                    img(src="../img/Icon_Arrow_Forward_Green@2x.png" alt="")
+                    .info-block__text
+                        | УЗНАТЬ СОСТОЯНИЕ ЗАКАЗОВ ПО ТЕЛЕФОНУ И ОНЛАЙН
+                input(type="tel" name="").info-block__input.info-block__input_tel
+                .info-block__search-icon-block.info-block__search-icon-block_tel
+                    img(src="../img/Icon_Phone_green@2x.png" alt="").info-block__search-icon
+            .info__block__item.info__block__item_mob
+                div
+                    img(src="../img/Icon_Arrow_Forward_Green@2x.png" alt="")
+                    .info-block__header.info-block__mob-none CLOCKSERVICE.RU
+                    .info-block__text.info-block__mob-none
+                        | РЕМОНТ ЯПОНСКИХ, ЕВРОПЕЙСКИХ ЧАСОВ
+                    .info-block__text.info-block__text_none Сделать заказ по шагам
+            .info__block__item.info__block__item_mob
+                div
+                    img(src="../img/Icon_Arrow_Forward_Green@2x.png" alt="")
+                    .info-block__header.info-block__mob-none WATCHBAND.RU
+                    .info-block__text.info-block__mob-none
+                        | ПРОДАЖА ЧАСОВЫХ РЕМЕШКОВ В РОЗНИЦУ
+                    .info-block__text.info-block__text_none
+                        div
+                            .info-block__text.info-block__text_none
+                                | Зарегистрироваться по телефону
+                        input(type="tel" name="").info-block__input.info-block__input_tel.info-block__text_none
+                        .info-block__search-icon-block.info-block__search-icon-block_tel.info-block__search-icon_last.info-block__text_none
+                            img(src="../img/Icon_Phone_green@2x.png" alt="").info-block__search-icon.info-block__text_none
+    .goods
+        .goods__wrapper
+            .wrapper-content
+                .goods__header
+                    div Новые поступления
+                    a(href='catalog.html')
+                        span.goods__btn-all Все
+            .news-index.owl-carousel.owl-theme
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+
+            .wrapper-content
+                .goods__header
+                    div Товар в пути
+                    a(href='catalog.html')
+                        span.goods__btn-all Все
+            .news-index.owl-carousel.owl-theme
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+
+            .wrapper-content
+                .goods__header
+                    div Новости
+                    a(href='all_news.html').goods__btn-all Все
+            .news-index.owl-carousel.owl-theme
+                a(href='').news-index__item.item
+                    .news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus. Ut vel mauris porttitor, ultricies magna sit amet, egestas odio.
+                a(href='').news-index__item.item
+                    .news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus.
+                a(href='').news-index__item.item
+                    img(src="../img/news.jpg" alt="").news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Vestibulum bibendum urna ac eleifend pharetra. Cras sit amet maximus quam. Sed ut mauris ante. Sed vestibulum nisl nisi. Ut et vestibulum sem, vitae congue lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ut nibh ac leo interdum venenatis gravida quis turpis.
+                a(href='').news-index__item.item
+                    img(src="../img/news.jpg" alt="").news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Pellentesque sollicitudin at velit et commodo. Phasellus pretium posuere efficitur. Maecenas fringilla pulvinar eros non molestie.
+                a(href='').news-index__item.item
+                    img(src="../img/news.jpg" alt="").news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus. Ut vel mauris porttitor, ultricies magna sit amet, egestas odio.
+
+
+
+        //.lk__main
+                    .lk__name-user MAX GUELMANN
+                    .lk__header Каталог
+                    .goods__content
+                        mixin goods__item-mixin()
+                            .goods__item
+                                div
+                                    img(src="../img/30082.jpg" alt="").goods__img
+                                div
+                                    div.goods__brend miota
+                                    div.goods__name МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                                    div.goods__price-block
+                                        span.goods__price 18600
+                                        span.goods__rub руб
+                                    .btn__in-order В заказ
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+                        +goods__item-mixin()
+
+
+                    button#loadMore.btn-black Загрузить еще
+
+    script(src="../js/jquery-3.4.1.min.js")
+        append scripts
+            script.
+                $(document).ready(function () {
+                    $('#slider2').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        cssEase: 'linear',
+                        arrows: true,
+                        autoplay: true
+
+                    });
+                });
+
+            script(src="../js/owlcarousel/owl.carousel.min.js")
+            script.
+                $(document).ready(function () {
+                    $('.owl-carousel').owlCarousel({
+                        loop: true,
+                        nav: true,
+                        items: 5,
+                        ppagination: false,
+                        navigation: true,
+                        center: true,
+                        responsive: {
+                            320: {
+                                items: 1
+                            },
+                            360: {
+                                items: 1
+                            },
+                            375: {
+                                items: 1
+                            },
+                            414: {
+                                items: 1
+                            },
+
+                            1024: {
+                                items: 3
+                            },
+                            1366: {
+                                items: 3
+                            },
+                            1600: {
+                                items: 4
+                            }
+                        }
+                    });
+                });
+
+        include footer

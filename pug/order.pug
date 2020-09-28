@@ -1,0 +1,202 @@
+extends main
+block variables
+    - var pageTitle = 'Личный кабинет';
+
+block content
+
+    .lk
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .lk__header Личный кабинет /
+                    .lk__header корзина
+                    .lk__menu-block
+                        .lk__menu
+                            span.lk__indicator.lk__plus
+                            span Личный кабинет
+                        nav.lk__nav
+                            li
+                                a(href="fast_delivery.html") Быстрая справка
+                            li
+                                a(href="history_orders.html") История платежей
+                            li
+                                a(href="status.html") Статус заказа
+                            li
+                                a(href="history_orders.html") История заказов
+                            li
+                                a.active(href="order.html") Корзина
+                                span.lk__cart 21
+                            li
+                                a(href="payments.html") Платежные средства
+                            li
+                                a(href="favorites.html") Любимые товары
+                            li
+                                a(href="profile.html") Профиль покупателя
+                            li.lk__exite Выйти
+
+                .main
+                    .order
+                        .order__form
+                            .order__item.active
+                                .order__flex
+                                    .order__step 1
+                                    .order__reg__note
+                                        .order__step-name Ваша регистрационная запись
+                                        .order__name Max Guelmann
+                                div.order__id-block
+                                    span Имя: &nbsp;
+                                    span.order__name
+                                        | Max Guelmann
+                                div
+                                    span ID: &nbsp;
+                                    span.order__id
+                                        | +79037627095
+                                button.next-step.btn-black Оформить заказ
+
+                            .order__item
+                                .order__flex
+                                    .order__step 2
+                                    .order__step-name Доставка
+                                .order__flex
+                                    label(for='address-defolt').order__label
+                                        input(type='checkbox' name='').order__checkbox#address-defolt
+                                        .order__checked
+                                        .order__label-text Использовать мой обычный адрес
+                                form
+                                    label(for='name') Имя *
+                                    input(type='text' name='', placeholder='Terry')#name
+                                    label(for='first-name') Фамилия *
+                                    input(type='text' name='' placeholder='Little')#first-name
+                                    label(for='address') Адрес *
+                                    input(type='text' name='' placeholder='')#address
+                                    label(for='country') Страна *
+                                    select( name='')#country
+                                        option Российская Федерация
+                                        option Российская Федерация
+                                        option Российская Федерация
+                                    label(for='city') Город *
+                                    input(type='text' name='' placeholder='')#city
+                                    label(for='tel') Телефон *
+                                    input(type='tel' name='' placeholder='')#tel
+                                    label(for='delivery') Способ доставки *
+                                    select(type='text' name='')#delivery
+                                        option Shop-Logistic - 350 РУБ
+                                        option Shop-Logistic - 350 РУБ
+                                        option Shop-Logistic - 350 РУБ
+                                    a(href='').next-step.btn-black Продолжить
+                            .order__item
+                                .order__flex
+                                    .order__step 3
+                                    .order__step-name Оплата
+                                .order__flex
+                                    label(for='defolt-cart').order__label
+                                        input(type='checkbox' name='').order__checkbox#defolt-cart
+                                        .order__checked
+                                        .order__label-text Использовать как обычно
+                                form
+                                    label(for='payment') Способ оплаты *
+                                    select( name='')#payment
+                                        option Банковская карта
+                                    label(for='cart-name') Имя на карте *
+                                    input(type='text' name='' placeholder='Имя')#cart-name
+                                    label(for='cart-number') Номер карты *
+                                    input(type='text' name='' placeholder='')#cart-number
+                                    label(for='cvc') CVC *
+                                    input(type='text' name='' placeholder='')#cvc
+
+                                    label(for='data-cart') Дата окончания действия *
+                                    .order__block-flex
+                                        select(type='tel' name='')#data-cart
+                                            option 01
+                                            option 02
+                                            option 03
+                                            option 04
+                                            option 05
+                                        select(type='tel' name='')#data-year
+                                            option 2019
+                                            option 2018
+                                            option 2017
+                                    a(href='').next-step.btn-black Продолжить
+                            .order__item
+                                .order__flex
+                                    .order__step 4
+                                    .order__reg__note
+                                        span.order__step-name Покупка
+                                        .text-grey Проверьте еще раз
+                                div.order__id-block
+                                    span Имя: &nbsp;
+                                    span.order__name  Max Guelmann
+                                .order__p
+                                    div Карта
+                                    div.order__cart-name Terry Little
+                                    div.order__cart-number ****** 1234
+                                .order__p
+                                    div Адрес доставки
+                                    div  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit dui quis est sagittis hendrerit. Доставка Shop-Logistic
+                                .order__p
+                                    div Доствка
+                                    .order__delivery Shop-Logistic
+                                .order__total
+                                    div
+                                        span Дисконт &nbsp;
+                                            span.order__sale (4%)
+                                        span.order__sale-sum 150.00
+                                    div
+                                        span Доставка &nbsp;
+                                        span.order__delivery-sum 350.00
+                                    div.order__total-block
+                                        span Итого &nbsp;
+                                        span.order__total-sum 4576.00
+                                a(href='').next-step.btn-black Оплатить
+
+                        .order__list
+                            .order__elem
+                                .order__step-name Список покупок
+                                .order__name Max Guelmann
+                            .order__items
+                                mixin order__elem-mixin()
+                                    .order__elem
+                                        .order__item-content
+                                            .order__flex
+                                                img(src='../img/30082.jpg', alt='').order__item-img
+                                                div
+                                                    .order__brend Bergeon
+                                                    .order__desc Lorem ipsum dolor sit amet, consectetur
+                                            .order__item-total-block
+                                                .order__item-total
+                                                    .order__total-sum 4050678
+                                                    span.order__btn-close
+                                                .order__item-total
+                                                    .order__min
+                                                    input(type='', name='', value='102').order__number-product
+                                                    .order__add +
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+                                +order__elem-mixin()
+
+                                .order__all-list
+                                    .order__hr
+                                    #loadAllList.order__btn-all-list Весь список
+                                        span.all-list 12
+                                .order__total
+                                    div
+                                        span Дисконт &nbsp;
+                                            span.order__sale (4%)
+                                        span.order__sale-sum 150.00
+                                    div
+                                        span Доставка &nbsp;
+                                        span.order__delivery-sum 350.00
+                                    div.order__total-block
+                                        span Итого &nbsp;
+                                        span.order__total-sum 4576.00
+
+    include footer

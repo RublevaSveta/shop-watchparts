@@ -1,0 +1,38 @@
+extends main
+block variables
+    - var pageTitle = 'Регистрация';
+
+block content
+
+    .lk.reg
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg__block
+                            .reg__step-1 4
+                            div Дополнительная информация
+                        div
+                            label Примечание
+                            textarea.reg__block-note
+                            .order__flex
+                                label(for='address-defolt').order__label
+                                    input(type='checkbox' name='').order__checkbox#address-defolt
+                                    .order__checked
+                                    .reg__text-label Я хочу получать рассылку новостей Watch Parts
+                            .reg__p_italic Регистрируясь на сайте watch-parts.ru, вы автоматически даете согласие на обработку ваших персональных данных, даете согласие получать письма, телефонные звонки, сообщения, электронные письма от компании "РУСПАРТ" и соглашаетесь с политикой конфиденциальности.
+
+
+
+                        a(href='').btn-black Отмена
+                        a(href='reg_step-5.html').btn-green Отправить
+
+    include footer

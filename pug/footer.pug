@@ -1,0 +1,210 @@
+mixin navLink(link, name, index)
+    li
+        if(index)
+            a(href=link).nav-Link.header__nav_index=name
+        else
+            a(href=link).nav-Link=name
+
+div(style='display: none; width: 100%; padding: 0; margin: 0; height: 100vh;')#modal-search
+    .modal-search__body
+        .search-block
+            .search-block__wrapper
+                .search-block__input-relative
+                    input(type="text" name="").search-block__search-input
+                    img(src="../img/Icon_Search_Green_Big.png" alt="").search-block__icon-search
+                .search-block__filtr
+                    .search-block__btn-filtr.active.tablinks(onclick="tabs(event, 'filtr2')") Фильтр
+                    .search-block__btn-sort.tablinks(onclick="tabs(event, 'sort2')") Сортировка
+
+                #filtr2.tabcontent(style="display:block;")
+
+                    .search-block__choose
+                        form(action="")
+                            .search__dropdown
+                                .search-block__header Раздел
+                                .search-block__input-relative.search-block__choose-input
+                                    span Все
+                                    img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                    .search-block__input-dropdown
+                                        ul
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+
+                            .search__dropdown
+                                .search-block__header Группа
+                                .search-block__input-relative.search-block__choose-input
+                                    span Все
+                                    img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                    .search-block__input-dropdown
+                                        ul
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+
+
+                                //select(name="").search-block__choose-input
+                                //    option Ремешки
+                                //    option Стенды и коробки
+                                //    option Элементы питания
+                                //    option распродажа
+                        .search-block__header Бренд
+                        .search-block__choose-brend
+                            .search-block__item Все
+                            .search-block__item.active Apella
+                            .search-block__item  Apella
+                            .search-block__item  Gandino
+                            .search-block__item.active Casio
+                            .search-block__item Eberhard
+                            .search-block__item.active Horotec
+                            .search-block__item ETA
+                            .search-block__item Frederique Constant
+                            .search-block__item  Alpha
+                            .search-block__item  Frederique Constant
+                            .search-block__item.active Casio
+                            .search-block__item Apella
+                            .search-block__item Casio
+                            .search-block__item  Gandino
+                            .search-block__item.active Casio
+                            .search-block__item Eberhard
+                            .search-block__item.active Horotec
+                            .search-block__item ETA
+                            .search-block__item Frederique Constant
+                            .search-block__item  Alpha
+                            .search-block__item  Frederique Constant
+                            .search-block__item.active Casio
+                            .search-block__item Apella
+                            .search-block__item Casio
+                    .search-block__btn.search-block__btn_clear Очистить
+                    .search-block__btn.search-block__btn_search Найти
+
+                #sort2.tabcontent(style="display:none;")
+
+                    .search-block__choose
+                        .search-block__header Сортировать по
+                        form(action="")
+                            .search__dropdown
+                                .search-block__input-relative.search-block__choose-input
+                                    span Цена
+                                    img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                    .search-block__input-dropdown
+                                        ul
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+                                            li.search-block__input-btn Элементы питания
+
+                            .search__dropdown
+                                .search-block__input-relative.search-block__choose-input
+                                    span Название
+                                    img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                    .search-block__input-dropdown
+                                        ul
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                                            li.search-block__input-btn Стенды и коробки
+                        .search-block__header(style='margin-top: 20px') Наличие
+                        .search__dropdown
+                            .search-block__input-relative.search-block__choose-input
+                                span Все
+                                img.search-block__icon(src="../img/icon_drop_down2x.png" alt="")
+                                .search-block__input-dropdown
+                                    ul
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+                                        li.search-block__input-btn Стенды и коробки
+
+                    .search-block__btn.search-block__btn_clear Очистить
+                    .search-block__btn.search-block__btn_search Найти
+
+
+footer.footer
+    .footer__wrapper
+        .footer__content
+            .footer__nav-block
+                div.footer__nav-block-wr
+                    div
+                        .footer__logo
+                        nav.footer__nav
+                            +navLink('../html/index.html', 'watchparts', true)
+                            +navLink('#', 'Каталог')
+                            +navLink('#', 'Акции')
+                            +navLink('#', 'Предзаказ')
+                            +navLink('#', 'Поддержка')
+                            +navLink('#', 'Контакты')
+                            +navLink('#', 'Реквизиты')
+                        a(href="tel:+74955439239").footer__tel +7 495 543 92 39
+                    nav.footer__nav
+                        +navLink('#', 'FAQ')
+                        +navLink('#', 'Оплата и доставка')
+                        +navLink('#', 'Гарантия')
+                        +navLink('#', 'Возврат')
+
+                    .footer__soc-networks
+                        div Cоциальные сети
+                        a(href="")
+                            span.footer__icons.footer_inst
+                        a(href="")
+                            span.footer__icons.footer_facebook
+                        a(href="")
+                            span.footer__icons.footer_twitter
+
+                .footer__copyright
+                    div 2019 &copy; RUSPART
+                    div РУСПАРТ поставляет и продает оборудование, инструменты и запасные части для ремонта и обслуживания часов, ремешки и браслеты для наручных часов.
+            .footer__info
+                div
+                    div.footer__info-text
+                        .footer__block
+                            div CLOCKSERVICE
+                            div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas porttitor justo ex, in hendrerit quam gravida quis. Donec et augue ex. Phasellus placerat pulvinar mollis. Sed eleifend consectetur nulla a vulputate.
+                            a(href="").footer__arrow
+                        .footer__block
+                            a(href="").footer__arrow
+                            div SWISSMASTER
+                            div Mauris sagittis tellus ut imperdiet tempus. Aliquam sit amet dignissim nulla. Vestibulum iaculis consequat neque, a rhoncus libero fermentum a. Fusce aliquam imperdiet felis et faucibus
+                .footer__copyright.footer__copyright_414
+                    div 2019 &copy; RUSPART
+                    div РУСПАРТ поставляет и продает оборудование, инструменты и запасные части для ремонта и обслуживания часов, ремешки и браслеты для наручных часов.
+
+                .footer__desc Этот веб-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для уточнения информации о наличии и стоимости товаров и (или) услуг обращайтесь к нашим менеджерам.
+
+    #modal(style='display: none;')
+        .modal__wrapper
+            .modal__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+            .modal__content Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus. Ut vel mauris porttitor, ultricies magna sit amet, egestas odio.
+                .btn-green Да
+                .btn-black Нет
+
+script(src="../js/jquery-3.4.1.min.js")
+script(src="../js/jquery.fancybox.min.js")
+script(src="../js/tabs.js")
+script(src="../js/slick.min.js")
+script(src="../js/scripts.js")
+
+

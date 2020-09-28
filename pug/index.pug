@@ -1,0 +1,402 @@
+extends main
+block variables
+    - var pageTitle = ' Главная';
+
+block content
+
+    .slider__wrapper
+        #slider2
+            .slider__wrapper
+                .slider
+                    .slider__content
+                        .slider__header-block
+                            img(src="../img/Icon_Brand_logo_black_Big@2x.png" alt="").slider__icon
+                            h1.slider__header WATCHPARTS
+                        p.slider__subtitle КАТАЛОГ ЗАПЧАСТЕЙ ДЛЯ ЧАСОВОГО БИЗНЕСА
+                        p.slider__text Только сертифицированные компоненты Поставки от производителя Аккуратная сборка заказа Персональный менеджер
+
+                        .slider__buttons-block
+                            a(data-fancybox data-src='#authorization' href='javascript;').slider__button.slider__button_black Войти
+                            a(data-fancybox data-src='#reg-1' href='javascript;').slider__button.slider__button_green Зарегистрироваться
+            .slider__wrapper
+                .slider
+                    .slider__content
+                        .slider__header-block
+                            img(src="../img/Icon_Brand_logo_black_Big@2x.png" alt="").slider__icon
+                            h1.slider__header WATCHPARTS
+                        p.slider__subtitle КАТАЛОГ ЗАПЧАСТЕЙ ДЛЯ ЧАСОВОГО БИЗНЕСА
+                        p.slider__text Только сертифицированные компоненты Поставки от производителя Аккуратная сборка заказа Персональный менеджер
+
+
+    .info-block
+        .info__block__items
+            .info__block__item
+                div
+                    img(src="../img/Icon_Arrow_Forward_Green@2x.png" alt="")
+                    .info-block__text
+                        | поиск по каталогу
+                input(type="text" name="" value="").info-block__input
+                .info-block__search-icon-block
+                    img(src="../img/Icon_Search_Green_Big.png" alt="").info-block__search-icon
+            .info__block__item
+                div
+                    img(src="../img/Icon_Arrow_Forward_Green@2x.png" alt="")
+                    .info-block__text
+                        | УЗНАТЬ СОСТОЯНИЕ ЗАКАЗОВ ПО ТЕЛЕФОНУ И ОНЛАЙН
+                input(type="tel" name="").info-block__input.info-block__input_tel
+                .info-block__search-icon-block.info-block__search-icon-block_tel
+                    img(src="../img/Icon_Phone_green@2x.png" alt="").info-block__search-icon
+            .info__block__item.info__block__item_mob
+                div
+                    img(src="../img/Icon_Arrow_Forward_Green@2x.png" alt="")
+                    .info-block__header.info-block__mob-none CLOCKSERVICE.RU
+                    .info-block__text.info-block__mob-none
+                        | РЕМОНТ ЯПОНСКИХ, ЕВРОПЕЙСКИХ ЧАСОВ
+                    .info-block__text.info-block__text_none Сделать заказ по шагам
+            .info__block__item.info__block__item_mob
+                div
+                    img(src="../img/Icon_Arrow_Forward_Green@2x.png" alt="")
+                    .info-block__header.info-block__mob-none WATCHBAND.RU
+                    .info-block__text.info-block__mob-none
+                        | ПРОДАЖА ЧАСОВЫХ РЕМЕШКОВ В РОЗНИЦУ
+                    .info-block__text.info-block__text_none
+                        div
+                            .info-block__text.info-block__text_none
+                                | Зарегистрироваться по телефону
+                        input(type="tel" name="").info-block__input.info-block__input_tel.info-block__text_none
+                        .info-block__search-icon-block.info-block__search-icon-block_tel.info-block__search-icon_last.info-block__text_none
+                            img(src="../img/Icon_Phone_green@2x.png" alt="").info-block__search-icon.info-block__text_none
+    .goods
+        .goods__wrapper
+            .wrapper-content
+                .goods__header
+                    div Новые поступления
+                    a(href='catalog.html')
+                        span.goods__btn-all Все
+            .news-index.owl-carousel.owl-theme
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+
+            .wrapper-content
+                .goods__header
+                    div Товар в пути
+                    a(href='catalog.html')
+                        span.goods__btn-all Все
+            .news-index.owl-carousel.owl-theme
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+                a(href='').news-index__item.item
+                    img(src="../img/../img/30082.jpg" alt="")
+                    .goods__name MIYOTA
+                    .goods__desc МЕХАНИЗМ В СБОРЕ MIYOTA 0S30
+                    .good__price 18 600
+                    .btn-green В заказ
+
+            .wrapper-content
+                .goods__header
+                    div Новости
+                    a(href='all_news.html').goods__btn-all Все
+            .news-index.owl-carousel.owl-theme
+                a(href='').news-index__item.item
+                    .news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus. Ut vel mauris porttitor, ultricies magna sit amet, egestas odio.
+                a(href='').news-index__item.item
+                    .news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus.
+                a(href='').news-index__item.item
+                    img(src="../img/news.jpg" alt="").news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Vestibulum bibendum urna ac eleifend pharetra. Cras sit amet maximus quam. Sed ut mauris ante. Sed vestibulum nisl nisi. Ut et vestibulum sem, vitae congue lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ut nibh ac leo interdum venenatis gravida quis turpis.
+                a(href='').news-index__item.item
+                    img(src="../img/news.jpg" alt="").news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Pellentesque sollicitudin at velit et commodo. Phasellus pretium posuere efficitur. Maecenas fringilla pulvinar eros non molestie.
+                a(href='').news-index__item.item
+                    img(src="../img/news.jpg" alt="").news-index__img
+                    .news-index__data 01.02.2020
+                    .news-index__header LOREM IPSUM DOLOR SIT AMET, CONSECTETUR
+                    .news-index__desc Morbi porttitor fringilla arcu et scelerisque. Vestibulum ipsum risus, consequat id odio eu, dapibus sagittis lacus. Ut vel mauris porttitor, ultricies magna sit amet, egestas odio.
+
+    <!-- MODAL -->
+
+    .lk.reg(style='display: none;')#reg-1
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg
+                            .reg__block
+                                .reg__step-1 1
+                                div Условия работы
+                            .reg__p Зарегистрируйтесь, чтобы: Ознакомиться с ценами и наличием Делать и сохранять заказы онлайн Оперативно узнавать о новых поступлениях и новостях Получить доступ к подробной технической информации о ремонте часов.
+                            .reg__p.reg__p_italic Мы работаем только с ИП и юридическими лицами — продаем товар только оптом и только для дальнейшего коммерческого использования. Все анкеты проверяются администратором, который в случае необходимости перезванивает по указанному вами телефону.
+                                span.reg__link Подробнее
+                            a(href='').btn-black Отмена
+                            a(data-fancybox data-src='#reg-2' href='javascript;').btn-green Далее
+
+    .lk.reg(style='display: none;')#reg-2
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg__block
+                            .reg__step-1 2
+                            div Информация о компании
+                        .reg__text-warm Эти поля обязательны для заполнения
+                        .reg__input-block
+                            .reg__input-item
+                                .reg__p
+                                    label(for='company-name') Название компании *
+                                    input(type='text', name='',  placeholder='@')#company-name.active
+                                .reg__p
+                                    label(for='favorites-goods') Интересующие товары *
+                                    input(type='text', name='',  placeholder='@')#favorites-goods
+                                .reg__p
+                                    label(for='inn') ИНН *
+                                    input(type='text', name='',  placeholder='@')#inn
+
+                            .reg__input-item
+                                .reg__p
+                                    label(for='work') Вид деятельности *
+                                    input(type='text', name='',  placeholder='@')#work
+                                .reg__p
+                                    label(for='legal-name') Юридическое название *
+                                    input(type='text', name='',  placeholder='@')#legal-name
+                                .reg__p
+                                    label(for='requisites') Реквизиты *
+                                    input(type='text', name='',  placeholder='@')#requisites
+
+
+                        a(href='').btn-black Отмена
+                        a(data-fancybox data-src='#reg-3' href='javascript;').btn-green Далее
+
+    .lk.reg(style='display: none;')#reg-3
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg__block
+                            .reg__step-1 3
+                            div Контактное лицо
+                        .reg__input-block
+                            form.reg__input-item
+                                .reg__p
+                                    label(for='user-name') Ф.И.О. *
+                                    input(type='text', name='',  placeholder='@')#user-name
+                                .reg__p
+                                    label(for='email') Email *
+                                    input(type='e-mail', name='',  placeholder='@')#email
+                                .reg__p
+                                    label(for='phone2') Телефон *
+                                    input(type='phone', name='',  placeholder='@')#phone2
+
+                            .reg__input-item
+                                .reg__p
+                                    label(for='post') Должность *
+                                    input(type='text', name='',  placeholder='@')#post
+                                .reg__p
+                                    label(for='password3') Пароль *
+                                    input(type='password', name='',  placeholder='@')#password3
+
+                        a(href='').btn-black Отмена
+                        a(data-fancybox data-src='#reg-4' href='javascript;').btn-green Далее
+
+    .lk.reg(style='display: none;')#reg-4
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg__block
+                            .reg__step-1 4
+                            div Дополнительная информация
+                        div
+                            label Примечание
+                            textarea.reg__block-note
+                            .order__flex
+                                label(for='address-defolt2').order__label
+                                    input(type='checkbox' name='').order__checkbox#address-defolt2
+                                    .order__checked
+                                    .reg__text-label Я хочу получать рассылку новостей Watch Parts
+                            .reg__p_italic Регистрируясь на сайте watch-parts.ru, вы автоматически даете согласие на обработку ваших персональных данных, даете согласие получать письма, телефонные звонки, сообщения, электронные письма от компании "РУСПАРТ" и соглашаетесь с политикой конфиденциальности.
+                        a(href='').btn-black Отмена
+                        a(data-fancybox data-src='#reg-5' href='javascript;').btn-green Отправить
+
+    .lk.reg(style='display: none;')#reg-5
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Регистрация
+                .main
+                    .main__wrapper
+                        .reg__block
+                            .reg__step-1 5
+                            div Спасибо!
+                        div Ваша заявка принята. Мы свяжемся с вами в самое ближайшее время.
+                        a(href='', style='width: 100px, text-align: center;').btn-black ОК
+
+
+    .lk.reg(style='display: none;')#authorization
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Вход
+                .main
+                    .reg__authorization
+                        //.text__warning Неверный пароль. Попробуйте еще раз!
+                        form.reg__input-item
+                            label(for='phone') Имя пользователя или телефон*
+                            input(type='phone', name='',  placeholder='@')#phone
+                            label(for='password') Пароль *
+                            input(type='password', name='',  placeholder='@')#password
+                        .order__flex
+                            label(for='address-defolt').order__label
+                                input(type='checkbox' name='').order__checkbox#address-defolt
+                                .order__checked
+                                div Запомнить меня на этом компьютере
+                        .btn-black Войти
+                        .green
+                            a(href='') Восстановить пароль.
+                            a(data-fancybox data-src='#reg-1' href='javascript;')
+                                strong Зарегистрироваться
+
+    script(src="../js/jquery-3.4.1.min.js")
+    append scripts
+        script.
+            $(document).ready(function () {
+                $('#slider2').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    cssEase: 'linear',
+                    arrows: true,
+                    autoplay: true
+
+                });
+            });
+
+        script(src="../js/owlcarousel/owl.carousel.min.js")
+        script.
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    nav: true,
+                    items: 5,
+                    ppagination: false,
+                    navigation: true,
+                    center:true,
+                    responsive: {
+                        320: {
+                            items: 1
+                        },
+                        360: {
+                            items: 1
+                        },
+                        375: {
+                            items: 1
+                        },
+                        414: {
+                            items: 1
+                        },
+
+                        1024: {
+                            items: 3
+                        },
+                        1366: {
+                            items: 3
+                        },
+                        1600: {
+                            items: 4
+                        }
+                    }
+                });
+            });
+
+    include footer

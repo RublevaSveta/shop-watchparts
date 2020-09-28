@@ -1,0 +1,30 @@
+extends main
+block variables
+    - var pageTitle = 'Личный кабинет';
+
+block content
+
+    .lk
+        .lk__wrapper
+            .lk__content
+                aside.aside
+                    a(href='status.html').aside__nav
+                        img(src='../img/icon_arrow_forward@2x.png' alt='').main__nav-arrow
+                    .main__subtitle.lk__header_none  личный кабинет /
+                    .main__header.lk__header_none корзина
+                    .lk__menu-block
+                        .lk__menu
+                            a(href='status.html')
+                                img(src='../img/Icon_Arrow_Back_Green@2x.png', alt='', style='width: 28px;')
+
+                .lk__main
+                    .lk__name-user MAX GUELMANN
+                        .lk__header ВАШ ЗАКАЗ УСПЕШНО ОПЛАЧЕН
+                        .lk__p
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet elementum lacus, in gravida odio. Nam gravida, nisl vel fringilla aliquet, metus leo iaculis diam, sit amet commodo elit ante id orci. Donec congue justo libero, sollicitudin interdum risus dignissim id. Cras in lorem quam. Cras nec dui convallis, elementum urna nec, vulputate enim. Etiam ut dapibus arcu. Curabitur euismod iaculis placerat. Aliquam a malesuada nulla.
+                            p Ut dignissim tellus nec sagittis porta. Nulla tortor arcu, hendrerit iaculis fermentum non, rutrum in orci. Vestibulum interdum diam vel erat laoreet elementum. Phasellus vel pellentesque mauris, eu convallis arcu. Integer mattis ipsum a sem convallis tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis ultrices euismod. In lobortis quam quis lorem molestie fermentum.
+                                a(href="") Подробнее
+
+                            a(href="status.html").btn-black Перейти в личный кабинет
+
+    include footer

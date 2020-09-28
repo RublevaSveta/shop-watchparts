@@ -1,0 +1,36 @@
+extends main
+block variables
+    - var pageTitle = 'Регистрация';
+
+block content
+
+    .lk.reg(style='display: none;')#authorization
+        .lk__wrapper
+            .lk__content
+                aside.lk__aside
+                    .aside__nav
+                        img(src='../img/Icon_Brand_logo_black_Big@2x.png', alt='').main__nav-arrow
+                        h1.main__header WATCHPARTS
+                    .main__subtitle Каталог запчастей для
+                    .main__subtitle часового бизнеса
+                    .main__subtitle
+                        strong Вход
+                .main
+                    .reg__authorization
+                        //.text__warning Неверный пароль. Попробуйте еще раз!
+                        form.reg__input-item
+                            label(for='phone') Имя пользователя или телефон*
+                            input(type='phone', name='',  placeholder='@')#phone
+                            label(for='password') Пароль *
+                            input(type='password', name='',  placeholder='@')#password
+                        .order__flex
+                            label(for='address-defolt').order__label
+                                input(type='checkbox' name='').order__checkbox#address-defolt
+                                .order__checked
+                                div Запомнить меня на этом компьютере
+                        .btn-black Войти
+                        .green
+                            a(href='') Восстановить пароль.
+                            a(href='')
+                                strong Зарегистрироваться
+    include footer
