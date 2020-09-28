@@ -1,0 +1,12 @@
+@media (max-width: 414px) {
+  .lk.reg .lk__wrapper {
+    padding: 0; } }
+
+@media (max-width: 812px) {
+  .lk.reg {
+    width: 100%;
+    height: 100vh; } }
+
+@media (max-width: 414px) {
+  .fancybox-content {
+    padding: 30px !important; } }
